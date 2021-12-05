@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Unipus网课助手
-// @namespace    https://www.github.com//
-// @description  显示U校园题目答案；支持单元测试、班级测试；自动答题；刷时长；开放自定义设置
-// @version      1.3.4
-// @author       
+// @name         Unipus网课助手-Rebirth
+// @namespace    https://www.github.com/
+// @description  显示U校园题目答案；支持自动练习；刷时长；开放自定义设置；不支持测试相关功能
+// @version      1.1
+// @author       All_Unipus_Hater
 // @license      GPL-3.0
 // @compatible   Chrome
 // @run-at       document-end
