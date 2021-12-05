@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Unipus网课助手-Rebirth
 // @namespace    https://www.github.com/
-// @description  显示U校园题目答案；支持自动练习；刷时长；开放自定义设置
+// @description  显示U校园题目答案；支持单元测试、班级测试；自动答题；刷时长；开放自定义设置
 // @version      1-Rebirth-Lite
 // @author       All_Unipus_Hater
 // @license      GPL-3.0
@@ -1982,6 +1982,10 @@ __decorate([Object(common["g" /* requestErrorHandler */])("openId获取异常"),
 __decorate([Object(common["g" /* requestErrorHandler */])("token获取异常"), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Promise)], requests_Requests, "getToken", null);
 
 __decorate([Object(common["g" /* requestErrorHandler */])("身份验证异常"), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Promise)], requests_Requests, "isExistUser", null);
+
+__decorate([Object(common["g" /* requestErrorHandler */])("单元测试答案获取异常"), __metadata("design:type", Function), __metadata("design:paramtypes", [String, String]), __metadata("design:returntype", Promise)], requests_Requests, "getUnitTestAnswers", null);
+
+__decorate([Object(common["g" /* requestErrorHandler */])("班级测试答案获取异常"), __metadata("design:type", Function), __metadata("design:paramtypes", [Set]), __metadata("design:returntype", Promise)], requests_Requests, "getClassTestAnswers", null);
 
 __decorate([Object(common["g" /* requestErrorHandler */])("脚本版本查询异常"), __metadata("design:type", Function), __metadata("design:paramtypes", [String]), __metadata("design:returntype", Promise)], requests_Requests, "checkVersion", null);
 
@@ -20258,6 +20262,29 @@ function _toConsumableArray(arr) {
   return _arrayWithoutHoles(arr) || _iterableToArray(arr) || Object(unsupportedIterableToArray["a" /* default */])(arr) || _nonIterableSpread();
 }
 // CONCATENATED MODULE: ./src/plugins/exam/setting.ts
+var SETTINGS = [{
+  title: "单元/班级测试",
+  display: true,
+  settings: [{
+    id: "autoSolveTest",
+    name: "自动答题",
+    type: "switch",
+    "default": false,
+    description: "是否自动解答测试，不建议使用"
+  }, {
+    id: "solveIntervalMinTest",
+    name: "间隔下限",
+    "default": 3000,
+    valueType: "number",
+    description: "单位毫秒，测试的答题间隔下限"
+  }, {
+    id: "solveIntervalMaxTest",
+    name: "间隔上限",
+    "default": 8000,
+    valueType: "number",
+    description: "单位毫秒，测试的答题间隔上限"
+  }]
+}];
 /* harmony default export */ var setting = (SETTINGS);
 // CONCATENATED MODULE: ./src/plugins/exercise/setting.ts
 var setting_SETTINGS = [{
