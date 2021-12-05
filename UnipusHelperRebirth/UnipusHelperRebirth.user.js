@@ -17210,14 +17210,6 @@ var render = function() {
               onclick:
                 "window.open('https://github.com','_blank')"
             }
-          }),
-          _vm._v(" "),
-          _c("Button", {
-            attrs: {
-              label: "交流群",
-              onclick:
-                "window.open('https://jq.qq.com/?_wv=1027&k=AyERrFvN','_blank')"
-            }
           })
         ],
         1
