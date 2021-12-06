@@ -3,6 +3,7 @@
 ***FUCK OFF UNIPUS***
 
 [Use This](https://github.com/PianCat/UnipusHelperRebirth/raw/main/UnipusHelperRebirth/UnipusHelperRebirth.user.js)
+[Mirrors](https://endpoint.fastgit.org/https://github.com/PianCat/UnipusHelperRebirth/blob/main/UnipusHelperRebirth/UnipusHelperRebirth.user.js)
 
 ## 中文说明
 
@@ -20,6 +21,6 @@
 
 好好学一下英语啊Kora
 
-总之，在油猴脚本或者 ScriptCat 中[用这个](https://github.com/PianCat/UnipusHelperRebirth/raw/main/UnipusHelperRebirth/UnipusHelperRebirth.user.js)
+总之，在油猴脚本或者 ScriptCat 中[用这个](https://endpoint.fastgit.org/https://github.com/PianCat/UnipusHelperRebirth/blob/main/UnipusHelperRebirth/UnipusHelperRebirth.user.js)
 
 懂？
